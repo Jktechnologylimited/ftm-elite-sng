@@ -1,0 +1,24 @@
+import Link from "next/link";
+import Photo from "./Photo";
+
+export default function ProjectCard({ project }) {
+  return (
+    <Link href={`/projects#${project.slug}`} className="group block">
+      <div className="relative h-[420px] overflow-hidden">
+        <Photo label={project.title} className="absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-105" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <h3 className="font-display text-2xl">{project.title}</h3>
+          <p className="text-sm mt-1">{project.location}</p>
+          <p className="text-xs text-white/80 mt-2">{project.tags.join(" • ")}</p>
+          <span className="inline-flex items-center gap-2 mt-4 text-xs tracking-widest text-gold-light">
+            VIEW PROJECT
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" className="transition-transform group-hover:translate-x-1">
+              <path d="M0 5h12M8 1l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </Link>
+  );
+}
