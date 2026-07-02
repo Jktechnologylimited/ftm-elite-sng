@@ -20,7 +20,7 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[280px] md:h-[340px] w-full">
             <Image
-              src="/images/abuja/view14.jpg"
+              src="/images/abuja/view05.jpg"
               alt="FTM Elite Services managed interior"
               fill
               className="object-cover"

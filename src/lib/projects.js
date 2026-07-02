@@ -2,14 +2,14 @@ export const PROJECTS = [
   {
     slug: "airport-road-residence",
     title: "Airport Road Residence",
-    location: "Abuja",
+    location: "Riverpark Estate, Abuja",
     tags: ["Residential Setup", "Hospitality Operations"],
     images: [
-      "/images/abuja/view06.jpg",
-      "/images/abuja/view08.jpg",
-      "/images/abuja/view09.jpg",
-      "/images/abuja/view10.jpg",
-      "/images/abuja/view14.jpg",
+      "/images/abuja/view01.jpg",
+      "/images/abuja/view02.jpg",
+      "/images/abuja/view03.jpg",
+      "/images/abuja/view04.jpg",
+      "/images/abuja/view05.jpg",
     ],
   },
   {

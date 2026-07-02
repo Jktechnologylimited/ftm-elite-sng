@@ -81,7 +81,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 md:px-10 pb-20 grid md:grid-cols-2 gap-0 items-stretch">
           <div className="relative h-[320px] md:h-auto min-h-[320px]">
             <Image
-              src="/images/abuja/view09.jpg"
+              src="/images/abuja/view02.jpg"
               alt="FTM Elite Services managed interior"
               fill
               className="object-cover"
