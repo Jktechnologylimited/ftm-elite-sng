@@ -1,11 +1,24 @@
 import Link from "next/link";
+import Image from "next/image";
 import Photo from "./Photo";
 
 export default function ProjectCard({ project }) {
+  const cover = project.images?.[0];
+
   return (
-    <Link href={`/projects#${project.slug}`} className="group block">
+    <Link href={`/projects/${project.slug}`} className="group block">
       <div className="relative h-[420px] overflow-hidden">
-        <Photo label={project.title} className="absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-105" />
+        {cover ? (
+          <Image
+            src={cover}
+            alt={project.title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        ) : (
+          <Photo label={project.title} className="absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-105" />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
           <h3 className="font-display text-2xl">{project.title}</h3>

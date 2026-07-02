@@ -1,44 +1,54 @@
 import Link from "next/link";
+import Image from "next/image";
+import { FaInstagram } from "react-icons/fa";
+import { INSTAGRAM_URL } from "@/lib/whatsapp";
 
 export default function Footer() {
   return (
-    <footer className="bg-cream border-t border-ink/10">
+    <footer className="bg-forest text-cream">
       <div className="mx-auto max-w-7xl px-6 md:px-10 py-12 flex flex-col md:flex-row md:items-start justify-between gap-10">
         <div>
-          <span className="block font-display text-xl">
-            FTM <span className="text-gold">ELITE</span> SERVICES
-          </span>
-          <span className="block text-[10px] tracking-[0.2em] text-stone uppercase mt-1">
+          <Image
+            src="/images/brand/logo.png"
+            alt="FTM Elite Services"
+            width={120}
+            height={120}
+            className="w-16 h-auto invert"
+          />
+          <span className="block text-[10px] tracking-[0.2em] text-cream/60 uppercase mt-2">
             Property &amp; Hospitality Management
           </span>
         </div>
 
         <div className="text-sm">
-          <p className="text-xs tracking-widest text-stone mb-3">QUICK LINKS</p>
+          <p className="text-xs tracking-widest text-cream/60 mb-3">QUICK LINKS</p>
           <ul className="flex gap-6">
-            <li><Link href="/" className="hover:text-gold">Home</Link></li>
-            <li><Link href="/#about" className="hover:text-gold">About</Link></li>
-            <li><Link href="/#services" className="hover:text-gold">Services</Link></li>
-            <li><Link href="/projects" className="hover:text-gold">Projects</Link></li>
-            <li><Link href="/#contact" className="hover:text-gold">Contact</Link></li>
+            <li><Link href="/" className="hover:text-gold-light">Home</Link></li>
+            <li><Link href="/about" className="hover:text-gold-light">About</Link></li>
+            <li><Link href="/#services" className="hover:text-gold-light">Services</Link></li>
+            <li><Link href="/projects" className="hover:text-gold-light">Projects</Link></li>
+            <li><Link href="/#contact" className="hover:text-gold-light">Contact</Link></li>
           </ul>
         </div>
 
         <div className="text-sm">
-          <p className="text-xs tracking-widest text-stone mb-3">FOLLOW US</p>
+          <p className="text-xs tracking-widest text-cream/60 mb-3">FOLLOW US</p>
           <div className="flex gap-3">
-            <a href="#" aria-label="Instagram" className="w-9 h-9 flex items-center justify-center border border-ink/20 rounded-full hover:border-gold hover:text-gold">
-              IG
-            </a>
-            <a href="#" aria-label="LinkedIn" className="w-9 h-9 flex items-center justify-center border border-ink/20 rounded-full hover:border-gold hover:text-gold">
-              in
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="w-9 h-9 flex items-center justify-center border border-cream/20 rounded-full hover:border-gold-light hover:text-gold-light transition-colors"
+            >
+              <FaInstagram size={16} />
             </a>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-ink/10">
-        <p className="mx-auto max-w-7xl px-6 md:px-10 py-5 text-xs text-stone">
+      <div className="border-t border-cream/10">
+        <p className="mx-auto max-w-7xl px-6 md:px-10 py-5 text-xs text-cream/60">
           © {new Date().getFullYear()} FTM Elite Services. All rights reserved.
         </p>
       </div>

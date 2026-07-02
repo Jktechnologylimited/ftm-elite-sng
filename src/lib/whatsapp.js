@@ -1,5 +1,4 @@
-// Update this to FTM Elite Services' real WhatsApp number (with country code, no spaces or symbols).
-export const WHATSAPP_NUMBER = "2348012345678";
+export const WHATSAPP_NUMBER = "2348066794774";
 
 export function waLink(message) {
   const text = encodeURIComponent(
@@ -9,4 +8,6 @@ export function waLink(message) {
 }
 
 export const CONTACT_EMAIL = "hello@ftmeliteservices.com";
-export const CONTACT_PHONE_DISPLAY = "+234 801 234 5678";
+export const CONTACT_PHONE_DISPLAY = "+234 806 679 4774";
+export const INSTAGRAM_HANDLE = "ftm_eliteservices";
+export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
