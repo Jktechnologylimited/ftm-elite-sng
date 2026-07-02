@@ -48,9 +48,22 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-cream/10">
-        <p className="mx-auto max-w-7xl px-6 md:px-10 py-5 text-xs text-cream/60">
-          © {new Date().getFullYear()} FTM Elite Services. All rights reserved.
-        </p>
+        <div className="mx-auto max-w-7xl px-6 md:px-10 py-5 flex flex-col md:flex-row md:items-center justify-between gap-2">
+          <p className="text-xs text-cream/60">
+            © {new Date().getFullYear()} FTM Elite Services. All rights reserved.
+          </p>
+          <a
+            href="https://jktl.com.ng/services/website-systems"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[11px] tracking-wide text-cream/40 hover:text-cream/60 transition-colors"
+          >
+            Business Website acquired from{" "}
+            <span className="font-display italic text-gold-light/80 hover:text-gold-light">
+              JK Technology Limited (JKTL)
+            </span>
+          </a>
+        </div>
       </div>
     </footer>
   );

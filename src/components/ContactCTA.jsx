@@ -26,7 +26,9 @@ export default function ContactCTA() {
         </a>
 
         <div className="flex flex-col gap-3 text-sm border-t md:border-t-0 md:border-l border-cream/20 md:pl-8 pt-6 md:pt-0">
-
+          <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-3 hover:text-gold-light transition-colors">
+            <HiOutlineMail size={18} /> {CONTACT_EMAIL}
+          </a>
           <a href={`tel:+${CONTACT_PHONE_DISPLAY.replace(/[^\d]/g, "")}`} className="flex items-center gap-3 hover:text-gold-light transition-colors">
             <HiOutlinePhone size={18} /> {CONTACT_PHONE_DISPLAY}
           </a>
