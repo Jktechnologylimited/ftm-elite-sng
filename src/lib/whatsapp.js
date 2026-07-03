@@ -7,7 +7,7 @@ export function waLink(message) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
 }
 
-export const CONTACT_EMAIL = "ftmeliteservices@gmail.com";
+export const CONTACT_EMAIL = "hello@ftmeliteservices.com";
 export const CONTACT_PHONE_DISPLAY = "+234 806 679 4774";
 export const INSTAGRAM_HANDLE = "ftm_eliteservices";
 export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;

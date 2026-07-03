@@ -24,7 +24,7 @@ export default function ProjectCard({ project }) {
           <h3 className="font-display text-2xl">{project.title}</h3>
           <p className="text-sm mt-1">{project.location}</p>
           <p className="text-xs text-white/80 mt-2">{project.tags.join(" • ")}</p>
-          <span className="inline-flex items-center gap-2 mt-4 text-xs tracking-widest text-gold-light">
+          <span className="inline-flex items-center gap-2 mt-4 bg-gold text-forest-dark text-xs tracking-widest font-medium px-5 py-3 hover:bg-gold-light transition-colors">
             VIEW PROJECT
             <svg width="14" height="10" viewBox="0 0 14 10" fill="none" className="transition-transform group-hover:translate-x-1">
               <path d="M0 5h12M8 1l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
