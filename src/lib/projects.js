@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     slug: "airport-road-residence",
     title: "Airport Road Residence",
-    location: "Abuja",
+    location: "Riverpark Estate, Abuja",
     tags: ["Residential Setup", "Hospitality Operations"],
     images: [
       "/images/abuja/view01.jpg",
