@@ -109,8 +109,14 @@ export default function Home() {
               development, professional operations, and long-term asset
               management.
             </p>
-            <Link href="/about" className="text-xs tracking-widest text-gold hover:text-gold-light">
-              READ MORE →
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 self-start bg-gold text-forest-dark text-xs tracking-widest font-medium px-6 py-4 hover:bg-gold-light transition-colors"
+            >
+              READ MORE
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                <path d="M0 5h12M8 1l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </Link>
           </div>
         </div>

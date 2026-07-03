@@ -60,7 +60,7 @@ export default function Footer() {
           >
             Business Website acquired from{" "}
             <span className="font-display italic text-gold-light/80 hover:text-gold-light">
-              JK Technology Limited (JKTL)
+              JKTL
             </span>
           </a>
         </div>

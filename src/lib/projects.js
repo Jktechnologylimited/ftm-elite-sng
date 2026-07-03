@@ -18,11 +18,12 @@ export const PROJECTS = [
     location: "Victoria Island, Lagos",
     tags: ["Property Setup", "Space Planning", "Project Coordination"],
     images: [
+      "/images/oniru/view07.jpg",
+      "/images/oniru/view08.jpg",
       "/images/oniru/view02.jpg",
       "/images/oniru/view04.jpg",
       "/images/oniru/view05.jpg",
-      "/images/oniru/view07.jpg",
-      "/images/oniru/view08.jpg",
+     
     ],
   },
 ];

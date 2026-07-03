@@ -202,7 +202,8 @@ export default function AboutPage() {
                 professionally managed, and positioned for long-term success.
               </p>
             </div>
-            <p className="font-display text-lg">Founder &amp; Managing Director</p>
+            <p className="font-display text-xl mb-1">Tosin Adebusola</p>
+            <p className="text-xs tracking-widest text-stone uppercase">Founder &amp; Managing Director</p>
           </div>
         </div>
       </section>
