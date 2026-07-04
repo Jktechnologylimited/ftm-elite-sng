@@ -56,7 +56,7 @@ export default function Footer() {
             href="https://jktl.com.ng/services/website-systems"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] tracking-wide text-cream/40 hover:text-cream/60 transition-colors"
+            className="text-[6px] tracking-wide text-cream/40 hover:text-cream/60 transition-colors"
           >
             Business Website acquired from{" "}
             <span className="font-display italic text-gold-light/80 hover:text-gold-light">
