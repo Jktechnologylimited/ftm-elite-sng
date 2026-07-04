@@ -52,17 +52,7 @@ export default function Footer() {
           <p className="text-xs text-cream/60">
             © {new Date().getFullYear()} FTM Elite Services. All rights reserved.
           </p>
-          <a
-            href="https://jktl.com.ng/services/website-systems"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[6px] tracking-wide text-cream/40 hover:text-cream/60 transition-colors"
-          >
-            Business Website acquired from{" "}
-            <span className="font-display italic text-gold-light/80 hover:text-gold-light">
-              JKTL
-            </span>
-          </a>
+          
         </div>
       </div>
     </footer>
